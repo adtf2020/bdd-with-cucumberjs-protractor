@@ -1,0 +1,27 @@
+{
+  "name": "Aurelia",
+  "scripts": {
+    "test": "protractor ./e2e/protractor.conf.js",
+    "webdriver-update": "webdriver-manager update",
+    "webdriver-start": "webdriver-manager start"
+  },
+  "dependencies": {
+    "@types/chai": "^4.2.14",
+    "cucumber-pretty": "^6.0.0",
+    "geckodriver": "^1.20.0",
+    "pretty": "^2.0.0",
+    "@types/cucumber": "^6.0.1",
+    "@types/node": "^12.11.1",
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "chromedriver": "^86.0.0",
+    "cucumber": "^6.0.5",
+    "cucumber-html-reporter": "^5.1.0",
+    "protractor": "^7.0.0",
+    "rimraf": "^2.6.2",
+    "protractor-cucumber-framework": "^6.2.1",
+    "ts-node": "~8.6.2",
+    "mkdirp": "0.5.1",
+    "typescript": "^3.9.7"
+  }
+}
