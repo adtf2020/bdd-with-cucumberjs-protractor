@@ -1,4 +1,4 @@
-# `aurelia-spike`
+# BDD framework with Cucumber.js and Protractor
 
 This project is bootstrapped by [aurelia-cli](https://github.com/aurelia/cli).
 
