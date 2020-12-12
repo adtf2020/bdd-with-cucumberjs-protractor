@@ -14,10 +14,6 @@ npm install
 ```
 npm run webdriver-update
 ```
-* Now start up a server with:
-```
-npm run webdriver-start
-```
 * Run the tests with:
 ```
 npm test

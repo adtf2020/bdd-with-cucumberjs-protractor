@@ -1,6 +1,6 @@
 const Reporter = require("./src/support/reporter");
 exports.config = {
-  directConnect = true,
+  directConnect: true,
   baseUrl: 'http://localhost:9090/',
   seleniumAddress: 'http://127.0.0.1:4444/wd/hub',
   getPageTimeout: 60000,
