@@ -1,0 +1,575 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Todos",
+    "line": 2,
+    "id": "todos",
+    "tags": [],
+    "uri": "e2e\\src\\features\\Todos.feature",
+    "elements": [
+      {
+        "id": "todos;i-can-add-a-todo",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "I can add a todo",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "blanc\\Protractor\\bdd-with-cucumberjs-protractor\\node_modules\\cucumber\\lib\\support_code_library_builder\\index.js:62"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I submit a todo \"Adopter de bonnes pratiques de test\"",
+            "match": {
+              "location": "e2e\\src\\steps-definitions\\TodoStepDefinition.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 302000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "a new todo 1 should be created being \"Adopter de bonnes pratiques de test\"",
+            "match": {
+              "location": "e2e\\src\\steps-definitions\\TodoStepDefinition.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 41000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "todos;i-can-complete-one-of-several-todos",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "I can complete one of several todos",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "blanc\\Protractor\\bdd-with-cucumberjs-protractor\\node_modules\\cucumber\\lib\\support_code_library_builder\\index.js:62"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "an existing todo 1 being \"Adopter de bonnes pratiques de test\"",
+            "match": {
+              "location": "e2e\\src\\steps-definitions\\TodoStepDefinition.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 208000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "an existing todo 2 being \"Comprendre le Keyword-Driven Testing\"",
+            "match": {
+              "location": "e2e\\src\\steps-definitions\\TodoStepDefinition.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 89000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "an existing todo 3 being \"Automatiser des cas de test avec Robot Framework\"",
+            "match": {
+              "location": "e2e\\src\\steps-definitions\\TodoStepDefinition.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 91000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "I complete the todo 2",
+            "match": {
+              "location": "e2e\\src\\steps-definitions\\TodoStepDefinition.ts:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 36000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "the todo 2 should be completed",
+            "match": {
+              "location": "e2e\\src\\steps-definitions\\TodoStepDefinition.ts:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "the todo 1 should be uncompleted",
+            "match": {
+              "location": "e2e\\src\\steps-definitions\\TodoStepDefinition.ts:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "the todo 3 should be uncompleted",
+            "match": {
+              "location": "e2e\\src\\steps-definitions\\TodoStepDefinition.ts:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "todos;i-can-remove-a-todo",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "I can remove a todo",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "blanc\\Protractor\\bdd-with-cucumberjs-protractor\\node_modules\\cucumber\\lib\\support_code_library_builder\\index.js:62"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 18,
+            "name": "an existing todo 1 being \"Choisir le bon type de framework de test\"",
+            "match": {
+              "location": "e2e\\src\\steps-definitions\\TodoStepDefinition.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 171000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "I remove a todo 1",
+            "match": {
+              "location": "e2e\\src\\steps-definitions\\TodoStepDefinition.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 61000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "the todo 1 should be deleted",
+            "match": {
+              "location": "e2e\\src\\steps-definitions\\TodoStepDefinition.ts:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 332000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          }
+        ]
+      },
+      {
+        "id": "todos;i-can-categorize-some-todos",
+        "keyword": "Scenario",
+        "line": 22,
+        "name": "I can categorize some todos",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "blanc\\Protractor\\bdd-with-cucumberjs-protractor\\node_modules\\cucumber\\lib\\support_code_library_builder\\index.js:62"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 23,
+            "name": "I submit a todo \"Choisir un livre intéressant\"",
+            "match": {
+              "location": "e2e\\src\\steps-definitions\\TodoStepDefinition.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 151000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "the todo 1 should not be categorized",
+            "match": {
+              "location": "e2e\\src\\steps-definitions\\TodoStepDefinition.ts:49"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 322000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 25,
+            "name": "I submit a \"private\" todo \"Marcher et faire du vélo avec mon chien\"",
+            "match": {
+              "location": "e2e\\src\\steps-definitions\\TodoStepDefinition.ts:54"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 165000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 26,
+            "name": "the todo 2 should be \"private\"",
+            "match": {
+              "location": "e2e\\src\\steps-definitions\\TodoStepDefinition.ts:59"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 18000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 27,
+            "name": "I submit a todo \"Faire un câlin avec mon chat\"",
+            "match": {
+              "location": "e2e\\src\\steps-definitions\\TodoStepDefinition.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 67000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 28,
+            "name": "the todo 3 should be \"private\"",
+            "match": {
+              "location": "e2e\\src\\steps-definitions\\TodoStepDefinition.ts:59"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 29,
+            "name": "I submit a \"professional\" todo \"Automatiser un cas de test de plus\"",
+            "match": {
+              "location": "e2e\\src\\steps-definitions\\TodoStepDefinition.ts:54"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 135000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 30,
+            "name": "the todo 4 should be \"professional\"",
+            "match": {
+              "location": "e2e\\src\\steps-definitions\\TodoStepDefinition.ts:59"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          }
+        ]
+      },
+      {
+        "id": "todos;i-can-read-only-one-category-of-todos",
+        "keyword": "Scenario",
+        "line": 32,
+        "name": "I can read only one category of todos",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "blanc\\Protractor\\bdd-with-cucumberjs-protractor\\node_modules\\cucumber\\lib\\support_code_library_builder\\index.js:62"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 33,
+            "name": "an existing todo 1 being \"Écrire un livre\"",
+            "match": {
+              "location": "e2e\\src\\steps-definitions\\TodoStepDefinition.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 134000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 34,
+            "name": "an existing \"professional\" todo 2 being \"Réaliser un spike de test\"",
+            "match": {
+              "location": "e2e\\src\\steps-definitions\\TodoStepDefinition.ts:64"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 136000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 35,
+            "name": "an existing \"private\" todo 3 being \"Tapisser le mur du salon\"",
+            "match": {
+              "location": "e2e\\src\\steps-definitions\\TodoStepDefinition.ts:64"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 131000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 36,
+            "name": "an existing \"professional\" todo 4 being \"Évaluer un framework de développement de test\"",
+            "match": {
+              "location": "e2e\\src\\steps-definitions\\TodoStepDefinition.ts:64"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 147000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 37,
+            "name": "I must see 4 todos",
+            "match": {
+              "location": "e2e\\src\\steps-definitions\\TodoStepDefinition.ts:71"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 38,
+            "name": "I check the private category",
+            "match": {
+              "location": "e2e\\src\\steps-definitions\\TodoStepDefinition.ts:84"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 39,
+            "name": "I should see 1 being \"private\" todos",
+            "match": {
+              "location": "e2e\\src\\steps-definitions\\TodoStepDefinition.ts:78"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 40,
+            "name": "I check the professional category",
+            "match": {
+              "location": "e2e\\src\\steps-definitions\\TodoStepDefinition.ts:88"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 41,
+            "name": "I should see 4 being \"professional\" todos",
+            "match": {
+              "location": "e2e\\src\\steps-definitions\\TodoStepDefinition.ts:78"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 42,
+            "name": "I check all categories",
+            "match": {
+              "location": "e2e\\src\\steps-definitions\\TodoStepDefinition.ts:94"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 43,
+            "name": "I must see 4 todos",
+            "match": {
+              "location": "e2e\\src\\steps-definitions\\TodoStepDefinition.ts:71"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

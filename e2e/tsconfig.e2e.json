@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+      "outDir": "../out-tsc/app",
+      "module": "commonjs",
+      "resolveJsonModule": true,
+      "esModuleInterop": true,
+      "types": [
+        "node",
+        "cucumber"
+      ]
+    }
+  }
+  
